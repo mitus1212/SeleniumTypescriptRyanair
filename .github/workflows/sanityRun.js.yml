@@ -38,7 +38,7 @@ jobs:
           echo BASE_URL=${{ secrets.DEV_BASE_URL}} >> .env
           cat .env
       - name: Test
-        run: npm run tests
+        run: npm run test
       - uses: actions/upload-artifact@v2
         if: failure()
         with:
