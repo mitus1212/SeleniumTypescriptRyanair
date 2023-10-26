@@ -13,7 +13,7 @@ export let driver: WebDriver;
 let page: MainPage;
 export let flightDetailsPage: FlightDetailsPage;
 
-const browserType = `${process.env.BROWSER}`;
+const browserType = "chrome";
 
 Given("the user is on the main page", { timeout: 2 * 5000 }, async () => {
   driver = await new Builder()
