@@ -1,0 +1,15 @@
+{
+  "default": {
+    "requireModule": ["ts-node/register"],
+    "require": ["src/steps/*.ts"],
+    "format": [
+      "progress-bar",
+      ["usage", "reports/usage.txt"],
+      ["json", "reports/messages.html"],
+      ["junit", "reports/junit.xml"],
+      ["html", "reports/html-formatter.html"]
+    ],
+    "retry": 2,
+    "retryTagFilter": "@flaky"
+  }
+}
