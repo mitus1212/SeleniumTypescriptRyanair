@@ -9,7 +9,8 @@ export default class MainPage {
   }
 
   async navigateToMainPage() {
-    await this.driver.get(`${process.env.BASE_URL}`);
+    //In real  life would be await this.driver.get(`${process.env.BASE_URL}`);
+    await this.driver.get("https://www.ryanair.com/ie/en/");
   }
 
   async clickAcceptAllCookiesButton() {
