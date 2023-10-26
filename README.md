@@ -41,4 +41,4 @@ npm run lint
 * The env file is separately created in the GitHub workflow from the provided github's secrets to assure data security.
 * The reports are generated using different formats(xml, txt, html, json) in the "/reports" folder, which can be gathered and imported to visualization tools.
 
-In the future version I would handle the popups, and price changes.
+In the future version I would handle the popups, price changes and increase tests reliability especially in headless mode.
